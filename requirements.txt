@@ -8,4 +8,5 @@ xgboost
 python-dotenv
 mysql-connector-python
 pymysql
+dill
 # -e .
