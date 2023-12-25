@@ -10,8 +10,9 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from sklearn.pipeline import Pipeline
-from src.mlproject.utils import read_sql_data,save_object
+from src.mlproject.utils import read_sql_data,save_object,evaluate_models
 from src.mlproject.components.data_ingestion import DataIngestion,DataIngestionConfig
+from src.mlproject.components.model_trainer import ModelTrainer,ModelTrainerConfig
 
 
 @dataclass
@@ -118,7 +119,10 @@ class DataTransformation:
 
 
 #     data_transformation=DataTransformation()
-#     data_transformation.initiate_data_transformation(train_data,test_data)
+#     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+
+#     model_trainer=ModelTrainer()
+#     print(model_trainer.initiate_model_trainer(train_arr,test_arr))
 
 
 
