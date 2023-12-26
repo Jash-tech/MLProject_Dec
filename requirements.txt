@@ -9,4 +9,5 @@ python-dotenv
 mysql-connector-python
 pymysql
 dill
+flask
 # -e .
